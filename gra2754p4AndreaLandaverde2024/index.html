@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gardening Website | Andrea Landaverde, 2024</title>
+<link rel="stylesheet" href="https://use.typekit.net/myh2axy.css">
+<link rel="stylesheet" href="https://use.typekit.net/myh2axy.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(
+    function() {
+      $('#icon').click (
+        function() {
+          $('#nav').show();
+          $('#icon').hide();
+          $('#x_icon').show();
+        }
+  );
+  $('#x_icon').click (
+    function() {
+          $('#nav').hide();
+          $('#icon').show();
+          $('#x_icon').hide();
+        }
+      );
+    }
+  );
+</script>
+
+<style type="text/css">
+body {
+    margin: 0;
+}
+wrapper {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+header {
+    padding: 20px;
+    background-color: white;
+}
+#nav {
+    display: none;
+    padding: 10px;
+    margin: 0;
+    background-color: #192A19;
+}
+section {
+    padding: 20px;
+}
+footer {
+    padding: 20px;
+    font-size: 18px;
+	font-family: "pt-sans", sans-serif;
+	font-style: normal;
+}
+ul li {
+    color: #FFFFFF;
+   	font-family: "rumba-large", sans-serif;
+	font-style: normal;
+    padding: 10px;
+    list-style-type: none;
+	font-size: 20px;
+}
+ul {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.minor {
+    background-color: #163D34;
+	color: white;
+}
+h2 {
+    font-family: "rumba-large", sans-serif;
+    font-style: normal;
+    font-size: 35px;
+}
+h3 {
+    font-family: "rumba-small", sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p {
+    font-family: "pt-sans", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#icon {
+    width: 50px;
+}
+#x_icon {
+    width: 50px;
+}
+.logo {
+    text-align: right;
+    vertical-align: right;
+}
+.aboutlist {
+    padding: 0;
+    margin: 0;
+    list-style-type: square;
+}
+/*This the beginning of the tablet query*/
+@media (min-width:800px){
+.services {
+    display: inline-block;
+    width: 46%;
+    margin: 12px;
+    vertical-align: top;
+}
+.minor {
+    background-color: #163D34;
+}
+}	
+/*This the beginning of the laptop query*/
+@media (min-width:1200px){
+wrapper {
+    max-width: 1366px;
+}
+.services {
+    display: inline-block;
+    margin: 7px;
+    width: 23.5%;
+    text-align: left;
+    vertical-align: top;
+}
+.minor {
+    /* [disabled]width: 49%; */
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #163D34;
+}
+#icon {
+    display: none;
+    width: auto;
+}
+#nav {
+    padding: Set Shorthand;
+    display: block;
+    background-color: #192A19;
+}
+ul li {
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 20px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+.about {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+#work {
+    /* [disabled]text-align: center; */
+}
+}
+
+</style>
+</head>
+
+<body>
+<wrapper>
+<header> 
+		<img id="icon" src="images2/menu.png" alt="Navigation icon. Click to expand navigation menu."/>
+		<img id="x_icon" src="images2/x.png" alt="Exit out icon. Click to close navigation menu." style="display: none;" />
+<img src="gaiaLogo2.png" alt="" width="250" class="logo">
+  </header>
+  <nav id="nav">
+    <ul>
+	<a href="#work" id="work_link">
+		<li>Our Work</li>
+		</a>
+	<a href="#about" id="about_link">
+        <li>About Us</li>
+		</a>
+	<a href="#contact" id="contact_link">
+		<li>Contact Us</li>
+		</a>
+    </ul>
+  </nav>
+
+	<main>
+  <video width="100%" height="auto" controls autoplay loop>
+	  <source src="video.mp4" type="video/mp4">
+	</video>
+	</main>
+
+  <section id="work">
+	<h2>Our Work</h2>
+    <div class="services"><img src="image8.jpg" width="100%" height="auto" alt="sod installation"/>
+		<h3>Gardening Advice</h3>
+		<p>Discover the art of nurturing a flourishing garden, whether it be a vibrant flower bed, a bountiful vegetable patch, or a fruitful orchard. Gardening is where everyone finds their happy place.</p>
+	</div>
+    <div class="services"><img src="image6.jpg" width="100%" height="auto" alt="sod installation"/>
+		<h3>Workshop and Education</h3>
+		<p>Learning knows no age limit. At Gaia, our team consists of experienced professionals who understand the benefits of gardening for promoting a healthy lifestyle and a cleaner environment.</p>
+	</div>
+	<div class="services"> <img src="image7.jpg" width="100%" height="auto" alt="sod installation"/>
+		<h3>Environmental Awareness</h3>
+		<p>Understanding the positive impact of gardening, especially in terms of the environmental benefits of planting more for our planet, is truly empowering.</p>
+	</div>
+	<div class="services"> <img src="image5.jpg" width="100%" height="auto" alt="sod installation"/>
+		<h3>Healthy Lifestyle</h3>
+		<p>Gardening has numerous health benefits for humans. Discover the advantages of cultivating your own vegetables, the best plants for each season, and the health benefits of different vegetables.</p>
+	</div>
+  </section>
+
+  <section class="minor" id="about">
+	<h2>About Gaia's Garden</h2>
+	<div class="about">
+    <img src="aboutImage.jpg" width="100%" height="auto" alt=""/>
+	</div>
+    <div class="about" style="margin-left: 10px">
+      <h3>Our Community in Gaia</h3>
+      <p>We are a community of individuals who are eager to share the beauty of gardening and the numerous benefits it brings to the environment, health, and education. This is for those who especially:</p>
+    <ul class="aboutlist">
+    	<li style="color: #CF8528; font-family: pt-sans, sans-serif; font-size: 20px">- Seek to learn the art of gardening</li>
+		<li style="color: #CF8528; font-family: pt-sans, sans-serif; font-size: 20px">- Find solace in cultivating and reaping the rewards of their labor</li>
+		<li style="color: #CF8528; font-family: pt-sans, sans-serif; font-size: 20px">- Are dedicated to making positive contributions to the environment</li>
+		<li style="color: #CF8528; font-family: pt-sans, sans-serif; font-size: 20px">- Have spare time and wish to embrace a new hobby</li>
+	</ul>
+</div>
+  </section>
+
+  <section id="contact">
+	<h2>Contact Us</h2>
+	<p>Contact us through <b style="color: #CF8528">gaia@gardenwork</b>.
+	<br>
+	Call through <b style="color: #CF8528">111-111-1111</b>
+	<br>
+	Fax is <b style="color: #CF8528">1-800-111-1111</b>
+	<br>
+	Shipping by email to: <b style="color: #CF8528">Gardener's Supply Co. 128 Intervale Road Burlington, VT 05401</b>
+	</p>
+  </section>
+  <footer>&copy; 2024, Andrea Landaverde.
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+</wrapper>
+</body>
+</html>
