@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML 5 Drag and Drop Game | Andrea Landaverde, 2024</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Galindo&display=swap" rel="stylesheet">
+<style type="text/css">
+body {
+    margin: 0;
+    background-color: #13032F;
+}
+wrapper {
+    background-color: #fff;
+    display: block;
+    margin: auto;
+    width: 1200px;
+}
+div {
+    padding: 10px;
+    border: thin solid black;
+}
+section {
+    /* [disabled]padding-left: 25px; */
+    /* [disabled]padding-bottom: 25px; */
+    /* [disabled]padding-right: 25px; */
+}
+.minor {
+    padding-top: 25px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 25px;
+}
+#row1, #row2, #row3 {
+    position: absolute;
+    margin-left: 64px;
+}
+div img {
+    width: 200px;
+    height: 200px;
+}
+#board {
+    background-color: #FFFFFF;
+    text-align: center;
+}
+#div1,#div2,#div3,#div4,#div5 {
+    display: inline-block;
+    width: 200px;
+    padding: 0;
+    height: 200px;
+    margin-left: -5px;
+}
+#div6, #div7, #div8, #div9, #div10 {
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    display: inline-block;
+    margin-left: -5px;
+    margin-top: -5px;
+}
+#div11, #div12, #div13, #div14, #div15 {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-left: -5px;
+    padding: 0;
+    margin-top: -5px;
+}
+#puzzlepieces {
+    background-color: #F9CDE8;
+    text-align: center;
+    height: 230px;
+}
+footer {
+    padding-top: 35px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+h1 {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: "Galindo", sans-serif;
+    margin: 0;
+    font-size: 78px;
+    text-align: center;
+	color: #283A97;
+}
+p {
+    /* [disabled]padding-top: 10px; */
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.info {
+    display: inline-block;
+    width: 45%;
+    padding-top: 23px;
+    padding-right: 23px;
+    padding-left: 23px;
+    padding-bottom: 23px;
+    vertical-align: middle;
+	font-family: "Atma", system-ui;
+	font-size: 30px;
+	color: darkmagenta;
+}
+}
+</style>
+	<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+
+<body>
+<wrapper>
+	<main>
+	<h1>Solve This Puzzle</h1>
+	<section class="minor">
+	  <section class="info"><img src="main-image.jpg" width="100%" height="auto" alt=""/>
+ 	  </section>
+	  <section class="info">
+    Can you spell out "Stay Calm Cool"? If you place a puzzle piece on top of another puzzle piece, it will disappear. If that happens, reload to reset the game. 
+	  </section>
+	</section>
+</main>
+<div id="board">
+   	  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		
+   	  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		
+	  <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		
+	  <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		
+	  <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		
+	  <clearfloat></clearfloat>
+		
+	  <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		
+	  <div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		
+	  <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		
+	  <div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		
+	  <div id="div10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		
+	  <clearfloat></clearfloat>
+		
+	  <div id="div11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		
+	  <div id="div12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		
+	  <div id="div13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		
+	  <div id="div14" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		
+	  <div id="div15" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		
+    </div>
+	
+    <div id="puzzlepieces">
+      	<div id="row1">
+		<img id="drag1" src="puzzle-r1-1.png" alt="" draggable="true" ondragstart="drag(event)">
+        
+        <img id="drag2" src="puzzle-r3-4.png" alt="" draggable="true" ondragstart="drag(event)">
+        
+        <img id="drag3" src="puzzle-r2-2.png" alt="" draggable="true" ondragstart="drag(event)">
+        
+        <img id="drag4" src="puzzle-r1-4.png" alt="" draggable="true" ondragstart="drag(event)">
+        
+        <img id="drag5" src="puzzle-r3-3.png" alt="" draggable="true" ondragstart="drag(event)">
+		</div>
+		
+		<div id="row2">
+		<img id="drag11" src="puzzle-r2-5.png" alt="" draggable="true" ondragstart="drag(event)">
+        
+        <img id="drag12" src="puzzle-r3-1.png" alt="" draggable="true" ondragstart="drag(event)">
+        
+        <img id="drag13" src="puzzle-r2-1.png" alt="" draggable="true" ondragstart="drag(event)">
+        
+        <img id="drag14" src="puzzle-r1-3.png" alt="" draggable="true" ondragstart="drag(event)">
+        
+        <img id="drag15" src="puzzle-r2-3.png" alt="" draggable="true" ondragstart="drag(event)">
+		</div>
+		<div id="row3">
+		<img id="drag6" src="puzzle-r3-5.png" alt="" draggable="true" ondragstart="drag(event)">
+        
+        <img id="drag7" src="puzzle-r1-2.png" alt="" draggable="true" ondragstart="drag(event)">
+        
+        <img id="drag8" src="puzzle-r2-4.png" alt="" draggable="true" ondragstart="drag(event)">
+        
+        <img id="drag9" src="puzzle-r3-2.png" alt="" draggable="true" ondragstart="drag(event)">
+        
+        <img id="drag10" src="puzzle-r1-5.png" alt="" draggable="true" ondragstart="drag(event)">
+		</div>
+	</div>
+    <footer>&copy; 2024, Andrea Landaverde
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+</wrapper>
+	
+</body>
+</html>
