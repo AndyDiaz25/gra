@@ -1,0 +1,485 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Global World Travel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<style type="text/css">
+body {
+    margin: 0;
+    background-image: url(el-salvador.jpeg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center top;
+}
+section {
+    padding-top: 10px;
+    display: inline-block;
+}
+footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: rgba(255,255,255,0.75);
+    width: 100%;
+    left: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header {
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    background-color: white;
+    vertical-align: bottom;
+}
+label {
+    padding-left: 13px;
+}
+header h1 {
+    margin-top: 0px;
+	font-family: "Lobster", sans-serif;
+	font-size:40px;
+}
+wrapper {
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    width: 1366px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.50);
+}
+#Tabs1 ul li a img {
+    height: 45px;
+    width: auto;
+    /* [disabled]background-color: transparent; */
+}
+#Tabs1 ul li {
+    background-color: rgba(146,206,243,0.60);
+    text-align: center;
+}
+#Tabs1 ul {
+    background-image: none;
+    border: none;
+    background-color: transparent;
+}
+#Tabs1 {
+    background-image: none;
+    border: none;
+    background-color: transparent;
+}
+#Tabs1 div {
+    background-color: rgba(255,255,255,0.70);
+}
+#Tabs1 div input ,#Tabs1 div select{
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+#Tabs1 div .search {
+    background-color: rgba(146,206,243,1.00);
+    font-weight: bold;
+}
+nav {
+}
+ul a li {
+    display: inline-block;
+    padding-left: 60px;
+    padding-right: 60px;
+    float: right;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-top: -57px;
+}
+.leaving-from-section {
+    display: inline-block;
+}
+.leaving-from-text {
+    margin: 0;
+    padding-bottom: 3px;
+    padding-left: 15px;
+}
+.leaving-input {
+    width: 700px;
+}
+.departing-text {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.departing-section {
+    display: inline-block;
+}
+.going-to-section {
+    display: inline-block;
+    padding-bottom: 25px;
+}
+.going-to-text {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.going-to-input {
+    width: 700px;
+}
+.returning-section {
+    display: inline-block;
+}
+.returning-text {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.traveler-section {
+    display: inline-block;
+}
+.tab1-section {
+    margin: auto;
+    display: block;
+    padding-top: 30px;
+}
+#tab1-search {
+}
+.tab2-going-to-section {
+    display: inline-block;
+}
+.tab2-going-to-text {
+    padding-left: 15px;
+    margin: 0;
+    padding-bottom: 3px;
+}
+.tab2-going-to-input {
+    width: 700px;
+}
+.check-in-section {
+    display: inline-block;
+}
+.check-in-text {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.check-out-section {
+    display: inline-block;
+}
+.check-out-text {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.guest-number-select {
+    display: inline-block;
+}
+.tab2-search-section {
+    padding-top: 30px;
+}
+#tab2-search-btn {
+}
+.tab3-location1-section {
+}
+.tab3-location1-text {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.tab3-location1-input {
+    width: 700px;
+}
+.pick-up-section {
+    display: inline-block;
+}
+.pick-up-text {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.pick-up-time-section {
+    display: inline-block;
+}
+.pick-up-time-text {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.tab3-location2-section {
+}
+.tab3-location2-text {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.tab3-location2-input {
+    width: 700px;
+}
+.drop-off-section {
+    display: inline-block;
+}
+.drop-off-text {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.drop-off-time-section {
+    display: inline-block;
+}
+.drop-off-time-text {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.tab3-search-section {
+    padding-top: 30px;
+}
+#tab3-search-btn {
+}
+.tab4-leaving-from-section {
+}
+.tab4-leaving-from-text {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.tab4-leaving-from-input {
+    width: 700px;
+}
+.tab4-leaving-date-section {
+    display: inline-block;
+}
+.tab4-leaving-date-text {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.tab4-leaving-time-section {
+    display: inline-block;
+}
+.tab4-leaving-time-text {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.tab4-going-to-section {
+}
+.tab4-going-to-text {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.tab4-going-to-input {
+    width: 700px;
+}
+.tab-4-going-date-section {
+}
+.tab4-going-date-text {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.tab4-going-time-section {
+}
+.tab4-going-time-text {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.tab4-search-section {
+}
+#tab4-search-btn {
+    padding-top: 30px;
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<header>
+  <a href="#"><img src="logo.png" width="113" height="" alt=""/></a>
+<nav>
+<ul>
+	  <a href="#"><li>Sign In</li></a>
+	  <a href="#"><li>Help</li></a>
+	  <a href="#"><li>Trips</li></a>
+	  <a href="#"><li>Discover</li></a>
+    </ul>
+</nav>
+</header>
+<wrapper>
+  <div id="Tabs1">
+    <ul>
+      <li><a href="#tabs-1"><img src="flight.1.png" width="600" height="282" alt=""/><br>
+	  Flights</a></li>
+      <li><a href="#tabs-2"><img src="hotel.1.png" width="456" height="492" alt=""/><br>
+	  Hotels</a></li>
+      <li><a href="#tabs-3"><img src="car.1.png" width="600" height="202" alt=""/><br>
+	  Cars</a></li>
+      <li><a href="#tabs-4"><img src="cruise.1.png" width="576" height="532" alt=""/><br>
+	  Cruises</a></li>
+      <li><a href="#tabs-5"><img src="things-to-do-icon.png" width="534" height="526" alt=""/><br>
+	  Things To Do</a></li>
+    </ul>
+    <div id="tabs-1">
+		<section class="leaving-from-section">
+		<p class="leaving-from-text">Leaving from</p>
+      <input type="text" class="leaving-input" placeholder="City, State, Country">
+		</section>
+		<section class="departing-section">
+	    <p class="departing-text">Departing</p>
+		<input type="date">
+	</section>
+	<br>
+  	  <section class="going-to-section">
+	  	  <p class="going-to-text">Going to</p>
+		<input type="text" class="going-to-input" placeholder="City, State, Country">
+		</section>
+		<section class="returning-section">
+		  <p class="returning-text">Returning</p>
+		<input type="date">
+		</section>
+		<br>
+		<select class="traveler-section">
+		  <option value="0">Number of Travelers</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5">5</option>
+		  <option value="5+">5+</option>
+        </select>
+        <section class="tab1-section">
+          <input type="submit" id="tab1-search" value="Search">
+        </section>
+    </div>
+	  
+    <div id="tabs-2">
+        <section class="tab2-going-to-section">
+		<p class="tab2-going-to-text">Going to</p>
+        <input type="text" class="tab2-going-to-input" placeholder="City, State, Country">
+        </section>
+		<br>
+        <section class="check-in-section">
+		<p class="check-in-text">Check-in</p>
+          <input type="date">
+        </section>
+        <section class="check-out-section">
+          <p class="check-out-text">Check-out</p>
+          <input type="date">
+        </section>
+		<select class="guest-number-select">
+	    <option value="0">Number of Guest</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5">5</option>
+		  <option value="=5">+5</option>
+		</select>
+		<br>
+        <section class="tab2-search-section">
+          <input type="submit" id="tab2-search-btn" value="Search">
+        </section>
+    </div>
+	  
+    <div id="tabs-3">
+      <section class="tab3-location1-section">
+        <p class="tab3-location1-text">Pick-Up Location</p>
+        <input type="text" class="tab3-location1-input" placeholder="City, Airport, or Address">
+      </section>
+      <section class="pick-up-section">
+        <p class="pick-up-text">Pick-Up Date</p>
+        <input type="date">
+      </section>
+      <section class="pick-up-time-section">
+        <p class="pick-up-time-text">Pick-Up Time</p>
+        <input type="time">
+      </section>
+		<br>
+        <section class="tab3-location2-section">
+          <p class="tab3-location2-text">Drop-Off Location</p>
+          <input type="text" class="tab3-location2-input" placeholder="City, Airport, or Address">
+        </section>
+        <section class="drop-off-section">
+          <p class="drop-off-text">Drop-Off Date</p>
+          <input type="date">
+        </section>
+        <section class="drop-off-time-section">
+          <p class="drop-off-time-text">Drop-Off Time</p>
+          <input type="time">
+        </section>
+		<br>
+        <section class="tab3-search-section">
+          <input type="submit" id="tab3-search-btn" value="Search">
+        </section>
+	</div>
+	  
+	<div id="tabs-4">
+		<section class="tab4-leaving-from-section">
+		  <p class="tab4-leaving-from-text">Leaving From</p>
+		<input type="text" class="tab4-leaving-from-input" placeholder="Destination">
+		</section>
+        <section class="tab4-leaving-date-section">
+          <p class="tab4-leaving-date-text">Departing Date</p>
+          <input type="date">
+        </section>
+        <section class="tab4-leaving-time-section">
+          <p class="tab4-leaving-time-text">Departing Time</p>
+          <input type="time">
+        </section>
+		<br>
+        <section class="tab4-going-to-section">
+          <p class="tab4-going-to-text">Returning</p>
+          <input type="text" class="tab4-going-to-input" placeholder="Returning">
+		</section>
+        <section class="tab-4-going-date-section">
+          <p class="tab4-going-date-text">Returning date</p>
+          <input type="date">
+        </section>
+        <section class="tab4-going-time-section">
+          <p class="tab4-going-time-text">Returning Time</p>
+          <input type="time">
+        </section>
+		<br>
+		<select>
+		  <option value="0">Number of Guest</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5">5</option>
+		  <option value="=5">+5</option>
+	  </select>
+		<br>
+		<br>
+      <section class="tab4-search-section">
+        <input type="submit" id="tab4-search-btn" value="Search">
+      </section>
+    </div>
+		
+<div id="tabs-5">
+      <input type="text" placeholder="Going to">
+	<input type="date">
+	<input type="submit" class="search" value="Search">
+    </div>
+  </div>
+  <footer><p>© 2024, Andrea Landaverde. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+</wrapper>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
