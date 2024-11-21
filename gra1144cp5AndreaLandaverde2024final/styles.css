@@ -1,0 +1,206 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    background-color: #000000;
+}
+ul a li {
+    padding: 8px 16px;
+    display: inline-block;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+ul a li:hover {
+color:black;
+}
+h1 {
+    padding: 16px;
+    color: #FFC84F;
+	font-family: "Shippori Mincho B1", serif;
+}
+footer {
+    background-color: #000000;
+    padding-top: 250px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    color: #FFFFFF;
+}
+main {
+    height: 800px;
+}
+wrapper {
+    width: 1366px;
+    margin: auto;
+    display: block;
+    height: 1024px;
+    background-color: #000000;
+}
+header {
+    height: 100px;
+    background-color: #000000;
+    padding: 16px;
+    color: #FFFFFF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+}
+nav {
+    background-color: #A85F0B;
+	color:black;
+	font-family: "Barlow Condensed", sans-serif;
+	font-weight: 500;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+	color:black;
+}
+
+.home {
+    background-image: url(sebastian-image.jpg);
+    background-position: 0% 0%;
+}
+.tour {
+    text-align: center;
+    background-color: #000000;
+}
+#tourdates {
+    font-size: x-large;
+    color: #FFFFFF;
+    text-align: left;
+    margin-left: 330px;
+}
+.tour h1 {
+    padding-top: 92px;
+}
+#spodifyplaylist {
+    margin-top: 455px;
+    margin-left: 0px;
+}
+#homeh1 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    margin-top: -1px;
+    padding-top: 251px;
+    padding-left: 7px;
+    font-size: 72px;
+}
+#home2h1 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    padding-left: 950px;
+    margin-top: -173px;
+    font-size: 65px;
+}
+.news {
+}
+#newsh1 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    padding-left: 630px;
+    font-size: 40px;
+}
+.grammynews {
+    display: inline-block;
+    color: white;
+    margin-left: 200px;
+    padding-top: 35px;
+    padding-right: 30px;
+}
+.starlitenews {
+    display: inline-block;
+    color: white;
+    font-size: medium;
+    padding-top: 35px;
+    margin-top: -50px;
+    padding-right: 30px;
+}
+#dharmap {
+    width: 270px;
+    text-align: center;
+    margin-left: 7px;
+}
+.dharmanews {
+    display:inline-block;
+	color:white;
+}
+#christmasp {
+    margin-right: 0px;
+    width: 270px;
+    text-align: center;
+    margin-left: 7px;
+}
+#grammyp {
+    width: 270px;
+    text-align: center;
+    padding-left: 7px;
+}
+.store {
+	text-align:center;
+}
+#storeh1 {
+    display: inline-block;
+    text-align: center;
+}
+.dharmavinyl {
+    padding-top: 120px;
+}
+#vinyl1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+#video1 {
+    margin-right: 100px;
+    margin-top: 40px;
+}
+#video3 {
+    margin-left: -99px;
+}
+#video4 {
+    margin-right: -98px;
+    margin-left: 105px;
+    margin-top: 40px;
+}
+.videos {
+    text-align: center;
+}
+#video2 {
+}
+#privacyp {
+    color: #FFFFFF;
+    font-size: x-large;
+    width: 1050px;
+    text-align: left;
+    margin-left: 130px;
+    margin-top: 150px;
+}
+.privacy {
+    text-align: center;
+}
+.photos {
+    text-align: center;
+}
+.photos #image1 {
+}
+.mailings {
+    text-align: center;
+}
+.merch {
+    text-align: center;
+}
+.blogs {
+    text-align: center;
+}
+.merch #merch1 {
+    margin-right: 50px;
+}
+.merch #merch3 {
+}
+.merch #merch2 {
+    min-width: 131px;
+    min-height: 111px;
+    margin-right: 50px;
+}
